@@ -1,0 +1,28 @@
+<div class="container mt-5"> 
+
+
+ <div class="container d-flex ">
+<div>
+<img class="imageDetails" src="{{image}}" alt="{{image}}">
+</div>
+<div>
+<a class="mb-2" href="/movies">Go Back</a>
+<h2>{{title}}</h2>
+<h3>Director {{director}}</h3>
+
+<ul>
+{{#each stars}}
+<li> {{this}}</li>
+{{/each}}
+</ul>
+
+<p> {{description}}</p>
+
+<p>
+{{#each showtimes}}
+ {{this}} |
+{{/each}}
+</p>
+</div>
+</div>
+</div>
